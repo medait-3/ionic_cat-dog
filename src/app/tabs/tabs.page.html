@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="danger" >
+    <ion-title style="text-align:center; color: black ">
+      animals
+    </ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <img (click)="openCat()"  src="/assets/img/1.jpg" alt="" style="border: 3px solid black" />
+      <ion-card-header style="background: black">
+        <ion-button  color="danger" (click)="openCat()" (click)="onClick()" expand="block"><a style="color: black "  >Cats</a></ion-button>
+        <ion-card-title style="text-align:center; color: white ">zone of Cats</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="background: black" >
+        <p style="color: white" >Domestic Cat is the subspecies of the domestication of the Wild Cat, a carnivorous mammal of the family Felidae. He is one of the main pets and today has about fifty different breeds recognized by certification bodies.</p>
+      </ion-card-content>
+    </ion-card > <ion-card class="welcome-card">
+      <img (click)="openDog()" src="/assets/img/2.jpg" alt="" style="border: 3px solid black"/>
+      <ion-card-header style="background: black">
+        <ion-button (click)="openDog()" color="danger" expand="block">Dogs</ion-button>
+        <ion-card-title style="text-align:center; color: white ">zone of dogs</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="background: black" >
+        <p style="color: white">The Dog is the domestic subspecies of Canis lupus, a mammal of the family Canidae, which also includes the Gray Wolf and the Dingo, a domestic dog returned to the wild.</p>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
